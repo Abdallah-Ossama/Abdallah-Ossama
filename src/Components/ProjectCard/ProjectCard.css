@@ -1,0 +1,275 @@
+#projects .project-card{
+    width:210px;
+    height:230px;
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    align-items: center;
+    justify-content:center;
+    background: #1e2235ac;
+    border-radius: 16px;
+}
+#projects .project-card .card-container{
+    width:85%;
+    height:88%;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content: space-between;
+}
+
+#projects .project-card .card-container img{
+    width:100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+#projects .project-card .card-container p{
+    color:#ffff;
+    font-size:5vw;
+    line-height:9px;
+    letter-spacing: 0.6px;
+}
+
+#projects .project-card .card-container p span{
+    color:var(--yellow-color);
+}
+
+#projects .project-card .card-container .buttons{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+
+#projects .project-card .card-container a{
+    width:45%;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border:none;
+    border-radius:7px;
+    background-color: #182ACE;
+    font-size:14px;
+    text-decoration:none;
+    color:#000000;
+    font-weight:lighter;
+}
+
+#projects .project-card .card-container a img{
+    align-self: center;
+    width:10%;
+    height: 30%;
+    margin-top: 3px;
+}
+@media (min-width:370px) and (max-width:450px){
+    #projects .project-card .card-container a{
+        width:50%;
+        height:35px;
+        border-radius:6px;
+    }
+    #projects .project-card{
+        width:250px;
+        height: 290px;
+        display:flex;
+        flex-direction:column;
+        align-self: center;
+        align-items: center;
+        justify-content:center;
+        background: #1e2235ac;
+        border-radius: 16px;
+    }
+}
+
+@media (min-width:450px) and (max-width:600px){
+    #projects .project-card .card-container a{
+        width:50%;
+        height:35px;
+        border-radius:6px;
+    }
+    #projects .project-card{
+        width:300px;
+        height: 320px;
+        display:flex;
+        flex-direction:column;
+        align-self: center;
+        align-items: center;
+        justify-content:center;
+        background: #1e2235ac;
+        border-radius: 16px;
+    }
+}
+
+@media (min-width:600px) and (max-width:770px){
+    #projects .project-card{
+        width:350px;
+        height:375px;
+        border-radius: 20px;
+    }
+    
+    #projects .project-card .card-container img{
+        width:100%;
+        height: 60%;
+        border-radius: 10px;
+    }
+    
+    #projects .project-card .card-container p{
+        font-size:28px;
+        line-height:9px;
+        letter-spacing: 0.7px;
+    }
+    
+    #projects .project-card .card-container a{
+        width:50%;
+        height:45px;
+        border-radius:8px;
+        font-size:22px;
+        font-weight:200;
+    }
+}
+
+@media (min-width:800px) and (max-width:900px){
+    #projects .project-card{
+        width:400px;
+        height:450px;
+        border-radius: 20px;
+    }
+    #projects .project-card .card-container{
+        width:85%;
+        height:88%;
+    }
+    
+    #projects .project-card .card-container img{
+        width:100%;
+        height: 60%;
+        border-radius: 10px;
+    }
+    
+    #projects .project-card .card-container p{
+        color:#ffff;
+        font-size:33px;
+        line-height:9px;
+        letter-spacing: 0.6px;
+    }
+    
+    #projects .project-card .card-container a{
+        width:50%;
+        height:45px;
+        border-radius:10px;
+        font-size:22px;
+        font-weight:200;
+    }
+}
+
+@media (min-width:900px) and (max-width:1250px){
+    #projects .project-card{
+        width:320px;
+        height:350px;
+        display:flex;
+        flex-direction:column;
+        align-self: center;
+        align-items: center;
+        justify-content:center;
+        background: #1e2235ac;
+        border-radius: 16px;
+    }
+    
+    #projects .project-card .card-container p{
+        color:#ffff;
+        font-size:28px;
+        line-height:9px;
+        letter-spacing: 0.6px;
+    }
+
+    #projects .project-card .card-container a{
+        width:45%;
+        height:40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border:none;
+        border-radius:7px;
+        background-color: #182ACE;
+        font-size:18px;
+        text-decoration:none;
+        color:#000000;
+        font-weight:400;
+    }
+    @media (min-height:1250px) and (max-height:1400px){
+        #projects .project-card{
+            width: 400px;
+            height:410px;
+        }
+    }
+}
+        
+@media (min-width:1250px) and (max-width:1400px){
+    #projects .project-card{
+        width:330px;
+        height:300px;
+        display:flex;
+        flex-direction:column;
+        align-self: center;
+        align-items: center;
+        justify-content:center;
+        background: #1e2235ac;
+        border-radius: 16px;
+    }
+
+    #projects .project-card .card-container p{
+        color:#ffff;
+        font-size:28px;
+        line-height:9px;
+        letter-spacing: 0.6px;
+    }
+
+    #projects .project-card .card-container a{
+        width:45%;
+        height:40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border:none;
+        border-radius:7px;
+        background-color: #182ACE;
+        font-size:18px;
+        text-decoration:none;
+        color:#000000;
+        font-weight:400;
+    }
+}
+
+
+@media (min-width:1400px) and (max-width:1800px){
+    #projects .project-card{
+        width:400px;
+        height:430px;
+        display:flex;
+        flex-direction:column;
+        align-self: center;
+        align-items: center;
+        justify-content:center;
+        background: #1e2235ac;
+        border-radius: 16px;
+    }
+
+    #projects .project-card .card-container p{
+        font-size:37px;
+    }
+
+    #projects .project-card .card-container a{
+        width:55%;
+        height:55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border:none;
+        border-radius:12px;
+        background-color: #182ACE;
+        font-size:25px;
+        text-decoration:none;
+        color:#000000;
+        font-weight:400;
+    }
+}

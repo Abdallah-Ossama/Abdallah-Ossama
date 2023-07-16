@@ -1,0 +1,158 @@
+#services #container .card{
+    width:60%;
+    height: 35vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #140e2fff;
+    border-radius: calc(var(--radiusServies) * 2);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--main-servies-color);
+    box-shadow:-1px -1px 20px 1px #ffffff1f;
+}
+#services #container .card .container{
+    width:80%;
+    height: 90%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+#services #container .card .container h1{
+    font-size: calc(var(--main-font) * 1.8);
+    color:#fff;
+}
+#services #container .card .container img{
+    width:50%;
+}
+#services #container .card .container button{
+    width:50%;
+    height:12%;
+    font-size:4px;
+    letter-spacing: 0.6px;
+    border:1px solid var(--main-servies-color);
+    border-radius:calc(var(--radiusServies) / 1.2);
+    background: none;
+    color: var(--main-servies-color);
+    cursor:pointer;
+    transition:0.6s ease;
+}
+
+#services #container .card .container button:hover{
+    transform: scale(1.1);
+    background-color: var(--main-servies-color);
+    color:#000;
+}
+
+@media (min-width:300px) and (max-width:600px){
+    #services #container .card{
+        width: 200px;
+        height: 250px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #140e2fff;
+        border-radius: calc(var(--radiusServies) * 2);
+        border-style: solid;
+        border-width: 1px;
+        border-color: var(--main-servies-color);
+        box-shadow:-1px -1px 20px 1px #ffffff1f;
+    }
+}
+
+@media (min-width:600px) and (max-width:850px){
+    #services #container .card{
+        width:270px;
+        height: 380px;
+        border-radius: 15px;
+        margin-top:10%;
+    }
+    #services #container .card .container{
+        width:80%;
+        height: 90%;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #services #container .card .container h1{
+        font-size: 27px;
+        color:white;
+    }
+    #services #container .card .container button{
+        width:40%;
+        height:11%;
+        font-size:14px;
+    }
+}
+
+@media (min-width:850px) and (max-width:1100px){
+    #services #container .card{
+        width:275px;
+        height: 360px;
+        border-radius: 15px;
+    }
+    #services #container .card .container{
+        width:80%;
+        height: 90%;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #services #container .card .container h1{
+        font-size: 30px;
+        color:white;
+    }
+    #services #container .card .container button{
+        width:40%;
+        height:11%;
+        font-size:14px;
+    }
+    @media (min-height:900px) and (max-height:1400px) {
+        #services #container .card{
+            width:350px;
+            height: 400px;
+            border-radius: 15px;
+        }
+        #services #container .card .container h1{
+            font-size: 28px;
+            color:white;
+        }
+    }
+}
+
+@media (min-width:1100px) and (max-width:1400px){
+    #services #container .card{
+        width:330px;
+        height: 400px;
+    }
+    #services #container .card .container h1{
+        font-size: 33px;
+        color:white;
+    }
+    #services #container .card .container button{
+        width:40%;
+        height:11%;
+        font-size:14px;
+    }
+}
+
+@media (min-width:1400px) and (max-width:1800px){
+    #services #container .card{
+        width:375px;
+        height: 450px;
+    }
+    #services #container .card .container h1{
+        font-size: 38px;
+        color:white;
+    }
+    #services #container .card .container button{
+        width:40%;
+        height:11%;
+        font-size:16px;
+    }
+}

@@ -1,0 +1,320 @@
+#skills{
+    height: 100vh;
+    width: 100%;
+    background-color: #000b25ff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#skills #skills-container{
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    z-index:50;
+}
+#skills #skills-container header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skills #skills-container header h1{
+    font-size:calc(var(--header-font) * 2.2);
+    font-weight: 500;
+    color:white;
+}
+#skills #skills-container header h1 span{
+    color:var(--yellow-color);
+}
+#skills #skills-container header #Bigline{
+    position: relative;
+    width: calc(var(--About-width) * 10);
+    height:2px;
+    margin-top: calc(var(--About-margin) / 2.5);
+    border-radius:200px;
+    background-color: #ffffff62;
+}
+
+#skills #skills-container header #Bigline::after{
+    position: absolute;
+    content: "";
+    width: calc(var(--About-width) * 5);
+    height: 2px;
+    right: calc(var(--About-width) * 2.5);
+    border-radius:200px;
+    background-color: var(--yellow-color);
+}
+
+#skills #skills-arrow{
+    display:flex;
+    flex-direction: column;
+    align-self:center;
+    justify-self: center;
+    position: absolute;
+    left:0px;
+    bottom:30px;
+    width:65%;
+    height: 30%;
+    z-index:0;
+}
+
+#skills #skills-container #main{
+    margin-top:40px;
+    width:310px;
+    height:310px;
+    background-color:#000000cf;
+    box-shadow: 1px 1px 10px 3px #ffffff0d;
+    border:0.5px solid #1e223575;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills #skills-container #main .cards {
+    width:95%;
+    height: 95%;
+    display:grid;
+    place-items: center;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    /* border: 2px solid red; */
+}
+
+@media (min-width:260px) and (max-width:400px) {
+    #skills #skills-container #main{
+        width:88%;
+        height:88vw;
+    }
+}
+@media (min-width:400px) and (max-width:600px){
+    #skills #skills-container #main{
+        width:88%;
+        height:88vw;
+        margin-top:40px;
+    }
+    #skills #skills-container{
+        width:100%;
+        height:70%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    #skills #skills-container header #Bigline{
+        position: relative;
+        width: calc(var(--About-width) * 8.5);
+        height:2px;
+        margin-top: calc(var(--About-margin) / 2.5);
+    }
+    
+    #skills #skills-container header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 4.5);
+        height: 2px;
+        right: calc(var(--About-width) * 2);
+    }
+    #skills #skills-arrow{
+        position: absolute;
+        left:0px;
+        bottom:-10px;
+        width:50%;
+        height:30%;
+    }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    #skills #skills-container #main{
+        width:75%;
+        height:75vw;
+        margin-top:40px;
+    }
+    #skills #skills-container{
+        width:100%;
+        height:70%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    #skills #skills-container header #Bigline{
+        position: relative;
+        width: calc(var(--About-width) * 8.5);
+        height:2px;
+        margin-top: calc(var(--About-margin) / 2.5);
+    }
+    
+    #skills #skills-container header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 4.5);
+        height: 2px;
+        right: calc(var(--About-width) * 2);
+    }
+    #skills #skills-arrow{
+        position: absolute;
+        left:0px;
+        bottom:-10px;
+        width:50%;
+        height:30%;
+    }
+}
+
+@media (min-width:800px) and (max-width:1000px){
+    #skills #skills-container{
+        width:90%;
+        height:90%;
+        margin-top:30px;
+    }
+    #skills #skills-container #main{
+        width:500px;
+        height:500px;
+    }
+
+    #skills #skills-container header #Bigline{
+        width: calc(var(--About-width) * 6);
+        margin-top: calc(var(--About-margin) / 2.8);
+    }
+    #skills #skills-container header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 3);
+        height: 2px;
+        right: calc(var(--About-width) * 1.5);
+        border-radius:200px;
+        background-color: var(--yellow-color);
+    }
+    #skills #skills-arrow{
+        position: absolute;
+        left:0px;
+        bottom:-50px;
+        width:30%;
+        height:35%;
+    }
+    @media (min-height:1050px) and (max-height:1500px) {
+        #skills #skills-arrow{
+            position: absolute;
+            left:0px;
+            bottom:100px;
+            width:55%;
+            height:30%;
+        }
+    }
+}
+
+
+@media (min-width:1000px) and (max-width:1200px){
+    #skills #skills-container{
+        width:90%;
+        height:90%;
+        margin-top:5%;
+    }
+    #skills #skills-container #main{
+        width:450px;
+        height:450px;
+    }
+
+    #skills #skills-container header #Bigline{
+        width: calc(var(--About-width) * 6);
+        margin-top: calc(var(--About-margin) / 2.8);
+    }
+    #skills #skills-container header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 3);
+        height: 2px;
+        right: calc(var(--About-width) * 1.5);
+        border-radius:200px;
+        background-color: var(--yellow-color);
+    }
+    #skills #skills-arrow{
+        position: absolute;
+        left:0px;
+        bottom:-50px;
+        width:30%;
+        height:35%;
+    }
+}
+@media (min-width:1200px) and (max-width:1300px) {
+    #skills #skills-container{
+        width:90%;
+        height:90%;
+        margin-top:5%;
+    }
+    #skills #skills-container #main{
+        width:550px;
+        height:550px;
+    }
+
+    #skills #skills-container header #Bigline{
+        width: calc(var(--About-width) * 6);
+        margin-top: calc(var(--About-margin) / 2.8);
+    }
+    #skills #skills-container header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 3);
+        height: 2px;
+        right: calc(var(--About-width) * 1.5);
+        border-radius:200px;
+        background-color: var(--yellow-color);
+    }
+    #skills #skills-arrow{
+        position: absolute;
+        left:0px;
+        bottom:-50px;
+        width:30%;
+        height:35%;
+    }
+    @media (min-height:1050px) and (max-height:1500px) {
+        #skills #skills-arrow{
+            position: absolute;
+            left:0px;
+            bottom:100px;
+            width:50%;
+            height:30%;
+        }
+        #skills #skills-container #main{
+            width:600px;
+            height:600px;
+        }
+    }
+}
+
+@media (min-width:1300px) and (max-width:1600px) {
+    #skills #skills-container{
+        width:90%;
+        height:90%;
+        margin-top:8%;
+    }
+    #skills #skills-container #main{
+        width:550px;
+        height:550px;
+    }
+
+    #skills #skills-container header #Bigline{
+        width: calc(var(--About-width) * 6);
+        margin-top: calc(var(--About-margin) / 2.8);
+    }
+    #skills #skills-container header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 3);
+        height: 2px;
+        right: calc(var(--About-width) * 1.5);
+        border-radius:200px;
+        background-color: var(--yellow-color);
+    }
+    #skills #skills-arrow{
+        position: absolute;
+        left:0px;
+        bottom:-10px;
+        width:400px;
+        height:350px;
+    }
+}

@@ -1,0 +1,299 @@
+#projects{
+    width:100%;
+    height: 200vh;
+    background-color: #000b25ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#projects header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    margin-top: 10px;
+}
+
+#projects  header h1{
+    font-size:calc(var(--header-font) * 2.2);
+    font-weight: 400;
+}
+
+#projects header h1 span{
+    color:var(--yellow-color)
+}
+
+#projects header #Bigline{
+    position: relative;
+    width: calc(var(--About-width) * 11);
+    height:2px;
+    margin-top: calc(var(--About-margin) / 2.2);
+    border-radius:200px;
+    background-color: #ffffff62;
+}
+
+#projects header #Bigline::after{
+    position: absolute;
+    content: "";
+    width: calc(var(--About-width) * 5.5);
+    height: 2px;
+    right: calc(var(--About-width) * 2.8);
+    border-radius:200px;
+    background-color: var(--yellow-color);
+}
+
+#projects nav{
+    width:75%;
+    height:5vh;
+    display:flex;
+    align-self: center;
+    justify-content:center ;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:1.3vw;
+}
+
+#projects nav .hd{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-self:center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    border:1.5px solid #182ACE;
+    background: none;
+    color:#ffffff;
+    font-weight: 300;
+    font-size: 4.5vw;
+}
+
+#projects nav .hd:focus,
+#projects nav .active{
+    background: #100f0163;
+    color: var(--yellow-color);
+    border:none;
+    /* box-shadow: 0px 0px 5px 3px #ffffff1a; */
+}
+
+#projects main{
+    width:60%;
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#projects #more{
+    width:150px;
+    height: 40px;
+    font-size: 20px;
+    border:1.5px solid var(--main-servies-color);
+    border-radius:7px;
+    background: none;
+    color:var(--main-servies-color);
+    transition:0.6s ease-in-out;
+}
+#projects #more:hover{
+    background: #000;
+    color:var(--yellow-color);
+    border:none;
+    border-radius:9px;
+    transform: scale(1.03);
+}
+
+
+@media (min-width:450px) and (max-width:800px) {
+    #projects  header #Bigline{
+        position: relative;
+        width: calc(var(--About-width) * 8.5);
+        height:2px;
+        margin-top: calc(var(--About-margin) / 2.5);
+    }
+    
+    #projects  header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 4.5);
+        height: 2px;
+        right: calc(var(--About-width) * 2);
+    }
+
+    #projects nav .hd{
+        font-weight: 300;
+        font-size: 28px;
+    }
+
+    #projects nav .hd:focus,
+    #projects nav .active{
+        background: #100f0163;
+        color: var(--yellow-color);
+        border:none;
+        /* box-shadow: 0px 0px 5px 3px #ffffff1a; */
+    }
+
+    #projects main{
+        width:60%;
+        height:75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+@media (min-width:850px) and (max-width:1250px){
+    #projects main{
+        width:75%;
+        height:80vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    #projects  header h1{
+        font-size:calc(var(--header-font) * 2);
+        font-weight: 400;
+    }
+
+    #projects header #Bigline{
+        width: calc(var(--About-width) * 6);
+        margin-top: calc(var(--About-margin) / 2.8);
+    }
+    #projects header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 3);
+        height: 2px;
+        right: calc(var(--About-width) * 1.5);
+        border-radius:200px;
+        background-color: var(--yellow-color);
+    }
+
+    #projects nav{
+        width:55%;
+        height:7vh;
+        display:flex;
+        align-self: center;
+        justify-content:center ;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:1.3vw;
+    }
+    
+    #projects nav .hd{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        align-self:center;
+        justify-self: center;
+        align-items: center;
+        justify-content: center;
+        border-radius:5px;
+        border:1.5px solid #182ACE;
+        background: none;
+        color:#ffffff;
+        font-weight: 300;
+        font-size: 2.5vw;
+    }
+    
+    #projects nav .hd:focus,
+    #projects nav .active{
+        background: #100f0163;
+        color: var(--yellow-color);
+        border:none;
+    }
+    @media (min-height:1100px) and (max-height:1600px){
+        #projects{
+            width:100%;
+            height: 160vh;
+        }
+        #projects main{
+            width:70%;
+            height:75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap:wrap;
+        }
+    }
+}
+
+@media (min-width:1250px) and (max-width:1500px){
+
+    #projects main{
+        width:72%;
+        height:80vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    #projects  header h1{
+        font-size:calc(var(--header-font) * 2);
+        font-weight: 400;
+    }
+
+    #projects header #Bigline{
+        width: calc(var(--About-width) * 6);
+        margin-top: calc(var(--About-margin) / 2.8);
+    }
+    #projects header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 3);
+        height: 2px;
+        right: calc(var(--About-width) * 1.5);
+        border-radius:200px;
+        background-color: var(--yellow-color);
+    }
+
+    #projects nav{
+        width:55%;
+        height:7vh;
+        display:flex;
+        align-self: center;
+        justify-content:center ;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:1.3vw;
+    }
+    
+    #projects nav .hd{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        align-self:center;
+        justify-self: center;
+        align-items: center;
+        justify-content: center;
+        border-radius:5px;
+        border:1.5px solid #182ACE;
+        background: none;
+        color:#ffffff;
+        font-weight: 300;
+        font-size: 2.5vw;
+    }
+    
+    #projects nav .hd:focus,
+    #projects nav .active{
+        background: #100f0163;
+        color: var(--yellow-color);
+        border:none;
+    }
+    @media (min-height:1100px) and (max-height:1600px){
+        #projects{
+            width:100%;
+            height: 160vh;
+        }
+        #projects main{
+            width:70%;
+            height:60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap:wrap;
+        }
+    }
+}
+

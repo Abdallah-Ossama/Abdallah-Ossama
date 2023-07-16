@@ -1,0 +1,24 @@
+* {
+  padding:0;
+  margin:0;
+  font-family:system-ui;
+}
+body{
+  background-color: #000000;
+}
+#root {
+  padding:0;
+  margin:0;
+  width:100%;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  transition:1s ease;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #ffffff25;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 25px;
+  background-color: darkgrey;
+}

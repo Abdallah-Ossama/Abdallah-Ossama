@@ -1,0 +1,27 @@
+#Message-container{
+    height: auto;
+    display:flex;
+    align-self: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+#Message{
+    width:100%;
+    height:auto;
+    position: relative;
+    background-color: #c9c9c9;
+    border-radius: 0px 6px 6px 6px;
+    margin:20px 0;
+}
+#Message::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left:-7px;
+    border-top:9px solid #c9c9c9;
+    border-left: 9px solid transparent;
+}
+#Message p{
+    padding:8px;
+    color:black;
+}

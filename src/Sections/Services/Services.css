@@ -1,0 +1,139 @@
+:root{
+    --main-servies-font:10px;
+    --main-servies-color:#0e1eff;
+    --widthServies:10px;
+    --radiusServies:7px;
+}
+#services{
+    width: 100%;
+    height:100vh;
+    background-color: #000b25ff;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+#services #container{
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#services header{
+    margin-top: 50px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+#services header h1{
+    color:white;
+    font-size:calc(var(--header-font) * 2.2);
+    font-weight: 400;
+}
+
+#services header h1 span{
+    color:var(--yellow-color);
+}
+
+#services header #Bigline{
+    position: relative;
+    width: calc(var(--About-width) * 10);
+    height:2px;
+    margin-top: calc(var(--About-margin) / 2.5);
+    border-radius:50px;
+    background-color: #ffffff62;
+}
+
+#services  header #Bigline::after{
+    position: absolute;
+    content: "";
+    width: calc(var(--About-width) * 5);
+    height: 2px;
+    right: calc(var(--About-width) * 2.5);
+    border-radius:50px;
+    background-color: var(--yellow-color);
+}
+
+@media (min-width:200px) and (max-width:450px) {
+    #services{
+        height:110vh;
+        justify-content: start;
+    }
+    
+    #services #container{
+        width: 100%;
+        height: 90vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #services #container .card{
+        width:70%;
+        height: 350px;
+        border-radius: 15px;
+        margin-top:10%;
+    }
+}
+
+@media (min-width:450px) and (max-width:850px){
+    #services #container{
+        width: 100%;
+        height: 90vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #services header #Bigline{
+        position: relative;
+        width: calc(var(--About-width) * 8.5);
+        height:2px;
+        margin-top: calc(var(--About-margin) / 2.5);
+    }
+    
+    #services header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 4.5);
+        height: 2px;
+        right: calc(var(--About-width) * 2);
+    }
+
+}
+@media (min-width:850px) and (max-width:1500px){
+    #services{
+        width: 100%;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+    }
+    #services #container{
+        width: 100%;
+        height: 60vh;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top:5%;
+    }
+    #services header #Bigline{
+        width: calc(var(--About-width) * 6);
+        margin-top: calc(var(--About-margin) / 1.8);
+    }
+    #services  header #Bigline::after{
+        position: absolute;
+        content: "";
+        width: calc(var(--About-width) * 3);
+        height: 2px;
+        right: calc(var(--About-width) * 1.5);
+        border-radius:200px;
+        background-color: var(--yellow-color);
+    }
+}

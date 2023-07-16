@@ -1,0 +1,279 @@
+:root{
+    --contact-font:10px;
+    --contact-width:10px;
+    --contact-padding:10px;
+    --contact-gap:10px;
+    --contact-radius:10px;
+}
+#contact{
+    width:100%;
+    height: 140vh;
+    display:flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap:calc(var(--contact-gap) * 3);
+    overflow: hidden;
+    font-family:"Poppins";
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    background-color: #000;
+    background-image: url(../../assets/images/stars1.webp);
+}
+#contact #contact-blend{
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 5vh;
+    background: linear-gradient(#000b25ff,#000000);
+}
+#contact #EarthCanvas{
+    width:270px;
+    height: 270px;
+}
+#contact #contact-container{
+    position: relative;
+    width:calc(var(--contact-width) * 30);
+    height: calc(var(--contact-width) * 50);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #100E24;
+    border-radius: calc(var(--contact-radius) * 1.6);
+    z-index:30;
+}
+#contact #contact-container::before{
+    width:calc(var(--contact-width) * 3.5);
+    height: calc(var(--contact-width) * 3.5);
+    position:absolute;
+    content:'';
+    top:4vh;
+    left:2.5vh;
+    border-radius:50%;
+    background: linear-gradient(141.79deg, #BD00FF 9.63%, #3E00FF 88.51%);
+    animation:circle1 10s linear infinite;
+    z-index:2;
+}
+@keyframes circle1{
+	from {
+		transform: rotate(0deg)
+		           translate(1rem)
+		           rotate(0deg);
+        opacity:1;
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(1rem) 
+		           rotate(-360deg);
+        opacity:1;
+	}
+}
+#contact #contact-container main{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact #contact-container main form{
+    width:85%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index:20;
+}
+#contact #contact-container h3{
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:calc(var(--contact-font) * 2.5);
+    font-weight: 900;
+}
+#contact #contact-container form label{
+    display: flex;
+    flex-direction: column;
+    gap:calc(var(--contact-gap) / 1.9);
+    z-index:10;
+}
+#contact #contact-container form label span{
+    color:#ffffff;
+    font-size:calc(var(--contact-font) * 1.2);
+}
+#contact #contact-container form label input{
+    height:15%;
+    border-radius: calc(var(--contact-radius) / 2);
+    font-size:calc(var(--contact-font) * 1.4);
+    border:0.5px solid #1c1738;
+    outline: none;
+    padding: calc(var(--contact-padding) * 1.2) calc(var(--contact-padding) * 1.2);
+    color:#AAA6BD;
+    background-color: #15112F;
+}
+#contact #contact-container form label textarea{
+    font-size:calc(var(--contact-font) * 1.4);
+    border:0.5px solid #1c1738;
+    outline: none;
+    padding: calc(var(--contact-padding) * 1.2) calc(var(--contact-padding) * 1.2);
+    color:#ffffff5b;
+    background-color: #15112F;
+    border-radius: calc(var(--contact-radius) / 2);
+    resize: none;
+}
+
+#contact #contact-container form button{
+    width:calc(var(--contact-width) * 6);
+    height:calc(var(--contact-width) * 2.7);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:var(--contact-padding);
+    font-size:calc(var(--contact-font) * 1.7);
+    font-weight:400;
+    border:none;
+    border-radius: calc(var(--contact-radius) / 2);
+    color:#ffff;
+    cursor: pointer;
+    background-color:#15112F;
+    transition:0.75s ease;
+}
+
+#contact #contact-container form button{
+    transform: scale(1.1);
+} 
+
+@media (min-width:250px) and (max-width:340px){
+    :root{
+        --contact-font:8px;
+        --contact-width:8px;
+        --contact-padding:10px;
+        --contact-gap:9px;
+        --contact-radius:9px;
+    }
+}
+
+@media (min-width:400px) and (max-width:500px){
+    @media (min-height:720px) and (max-height:850px){
+        :root{
+            --contact-font:11px;
+            --contact-width:11px;
+            --contact-padding:10px;
+            --contact-gap:11px;
+            --contact-radius:9px;
+        }
+    }
+}
+@media (min-width:500px) and (max-width:850px){
+    :root{
+        --contact-font:15px;
+        --contact-width:15px;
+        --contact-padding:15px;
+        --contact-gap:15px;
+        --contact-radius:15px;
+    }
+    #contact #EarthCanvas{
+        width:370px;
+        height: 370px;
+    }
+}
+
+@media (min-width:850px) and (max-width:1000px){
+    :root{
+        --contact-font:11px;
+        --contact-width:11px;
+        --contact-padding:11px;
+        --contact-gap:11px;
+        --contact-radius:11px;
+    }
+    #contact{
+        width:100%;
+        height: 110vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #contact #EarthCanvas{
+        width:310px;
+        height: 400px;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1250px){
+    :root{
+        --contact-font:11px;
+        --contact-width:11px;
+        --contact-padding:11px;
+        --contact-gap:11px;
+        --contact-radius:11px;
+    }
+    #contact{
+        width:100%;
+        height: 110vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #contact #EarthCanvas{
+        width:310px;
+        height: 400px;
+    }
+
+    @media (min-height:1100px) and (max-height:1400px){
+        :root{
+            --contact-width:13px;
+            --contact-font:12.5px;
+            --contact-padding:13px;
+            --contact-gap:13px;
+            --contact-radius:12px;
+        }
+        #contact #EarthCanvas{
+            width:330px;
+            height: 400px;
+        }
+    }
+}
+
+@media (min-width:1250px) and (max-width:1400px){
+    :root{
+        --contact-font:13px;
+        --contact-width:13px;
+        --contact-padding:14px;
+        --contact-gap:14px;
+        --contact-radius:13px;
+    }
+    #contact{
+        width:100%;
+        height: 100vh;
+        flex-direction: row;
+    }
+
+    #contact #EarthCanvas{
+        width:410px;
+        height: 410px;
+    }
+
+}
+
+@media (min-width:1400px) and (max-width:2000px){
+    :root{
+        --contact-font:14.5px;
+        --contact-width:14.5px;
+        --contact-padding:15px;
+        --contact-gap:15px;
+        --contact-radius:13px;
+    }
+    #contact{
+        width:100%;
+        height: 100vh;
+        flex-direction: row;
+    }
+
+    #contact #EarthCanvas{
+        width:430px;
+        height: 430px;
+    }
+
+}

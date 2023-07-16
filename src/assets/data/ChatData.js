@@ -1,0 +1,1 @@
+export const ChatData = ["Abdallah Ossama is a person who lived in Egypt , New Valley", "Ossama", "Mohamed", "Mahmud"];
